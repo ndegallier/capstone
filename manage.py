@@ -1,5 +1,5 @@
 import os
-from Flask import Manager
+from flask_script import Manager
 
 from capstone import app
 

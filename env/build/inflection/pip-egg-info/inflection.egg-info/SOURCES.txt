@@ -1,0 +1,12 @@
+CHANGES.rst
+LICENSE
+MANIFEST.in
+README.rst
+inflection.py
+setup.cfg
+test_inflection.py
+pip-egg-info/inflection.egg-info/PKG-INFO
+pip-egg-info/inflection.egg-info/SOURCES.txt
+pip-egg-info/inflection.egg-info/dependency_links.txt
+pip-egg-info/inflection.egg-info/not-zip-safe
+pip-egg-info/inflection.egg-info/top_level.txt
