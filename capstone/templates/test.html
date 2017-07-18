@@ -1,10 +1,17 @@
 {% extends "base.html" %}
 {% block content %}
+<style>
+    body { 
+        color: red;
+    }
+</style>
 
 <p>
     This is a test template
 </p>
 
-{{ s }}
+
+<body>{{ d | safe }}</body>
+
 
 {% endblock %}
