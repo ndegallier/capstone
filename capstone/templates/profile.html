@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block content %}
+<style type="text/css">
+
+    
+</style>
+<h1>
+    {{ equity.name }}
+</h1>
+
+<body>
+{{ last_price }}
+
+{{ plot | safe }}
+</body>
+
+{% endblock %}

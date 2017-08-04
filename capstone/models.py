@@ -24,29 +24,20 @@ class User(Base):
         }
 
 class Equity(Base):
-    __tablename__ =  "equity"
+    __tablename__ =  'equity'
     id = Column(Integer, primary_key=True)
     name = Column(String, nullable=False)
     ticker = Column(String, nullable=False)
-    daily_stats = relationship("Daily_Stats", backref="equity")
-    
+    date = Column(Date, nullable=False)
+    close = Column(Float)
 
-    
-    """def as_dictionary(self):
+    def as_dictionary(self):
         equity = {
             "id": self.id,
             "ticker": self.ticker,
-            "close": self.close_price,
-            "date" : self.date
-        }"""
+            "date": self.date,
+            "close": self.close
+        }
+        return equity
 
-class Daily_Stats(Base):
-    __tablename__ = 'close'
-    
-    id = Column(Integer, primary_key=True)
-    date = Column(Date, nullable=False)
-    close = Column(Float)
-    
-    equity_id = Column(Integer, ForeignKey('equity.id'),
-                        nullable=False)
                         

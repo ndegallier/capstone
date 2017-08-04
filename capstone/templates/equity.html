@@ -1,9 +1,11 @@
 {% extends "base.html" %}
 {% block content %}
 
+{{ a | safe }}
+
 <p>
 {{ name }}
 <p>
-{{ data | safe }}
+
 
 {% endblock %}

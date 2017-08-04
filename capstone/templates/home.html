@@ -1,8 +1,12 @@
 {% extends "base.html" %}
 {% block content %}
 
+<link rel="stylesheet" href="{{ url_for('static', filename='none.css') }}">
+
 <h1>
     This is the homepage
 </h1>
+
+{{ a | safe }}
 
 {% endblock %}

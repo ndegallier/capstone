@@ -8,7 +8,6 @@ app.config.from_object(config_path)
 
 from . import views
 from . import filters
-from . import api
 
 from .database import Base, engine
 Base.metadata.create_all(engine)

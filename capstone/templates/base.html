@@ -1,12 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="utf-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-
         <!-- CSS -->
-        <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='none.css') }}">
     </head>
     <body>
         <div class="navbar navbar-inverse navbar-static-top" role="navigation">
@@ -14,6 +10,12 @@
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                         <span class="sr-only"><a class="navbar-brand" href="{{ url_for('home') }}">Home</a></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only"><a class="navbar-brand" href="{{ url_for('profile') }}">Profile</a></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
